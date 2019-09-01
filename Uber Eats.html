@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Food Order</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="login-page">
+	
+	
+<div class="form">
+
+		
+	
+	
+	<form class="reg-form" action="database.php" method="post" onsubmit="return validation()">
+		
+		<input type="text" name="First" placeholder="Name"><br>
+		<input type="text" name="Last" placeholder="Last Name"><br>
+		<input type="text" name="Number" placeholder="Contact Number"><br>
+		<input type="text" name="Address" placeholder="Address"><br>
+		<input type="text" name="Username" placeholder="Username"><br>
+		<input type="text" name="Password" placeholder="Password"><br>
+		<input type="email" name="Email" placeholder="Email id"><br>
+		<label>Birthday<input type="date" name="Birthday"></label><br>
+		
+		<button>Create</button>
+		<p class="message">Already Registered? <a href="#"><br>Login Here</a></p><br>
+	</form>
+	<form class="login-form" action="login.php" method="post" onsubmit="return validation()">
+		<img src="img3.jpg" class=avatar>
+		<input type="text" placeholder="Username" name="name",required>
+		<input type="Password" placeholder="Password" name="Password",required>
+		<input type="email" placeholder="Email Id" name="email" >
+		<input type="checkbox" name=rememberme >Remember Me</input>
+		<input type="submit" name="login" value="Login">
+
+		<p class="message">Not Registered? </br><a href="#">Register Here</a></p>
+
+	
+
+	</form>
+</div>	
+	
+</div>
+<script type="text/javascript">
+	function validation(){
+		var Username=document.getElementById('Username').value;
+		var Password=document.getElementById('Password').value;
+		var Email Id=document.getElementById('Email Id').value;
+			if((Username=="" )||( Password=="") || (Email Id==""))
+			{
+				alert("required");
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+
+	}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script>
+		$('.message a').click(function(){$('form').animate({height:"toggle", opacity:"toggle"},"slow");});
+	</script> 
+</body>
+</html>
