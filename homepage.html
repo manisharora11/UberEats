@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+.bg{ 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+</style>
+<title>Restaurant app</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body background="3.jpg">
+	<ul>
+		<li>
+			<a href="homepage.html">
+				<div class="icon">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<i class="fa fa-home" aria-hidden="true"></i></div>
+				<div class="name" data-text="Home">Home</div>
+			</a>
+		</li>
+		<li>
+			<a href="menu.html">
+				<div class="icon">
+				<i class="fa fa-file-text" aria-hidden="true"></i>
+				<i class="fa fa-file-text" aria-hidden="true"></i></div>
+				<div class="name" data-text="MENU">Menu</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="icon">
+				<i class="fa fa-cogs" aria-hidden="true"></i>
+				<i class="fa fa-cogs" aria-hidden="true"></i></div>
+				<div class="name" data-text="Services">Services</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="icon">
+				<i class="fa fa-picture-o" aria-hidden="true"></i>
+				<i class="fa fa-picture-o" aria-hidden="true"></i></div>
+				<div class="name" data-text="Portfolio">Portfolio</div>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<div class="icon"><i class="fa fa-users" aria-hidden="true"></i>
+				<i class="fa fa-users" aria-hidden="true"></i></div>
+				<div class="name" data-text="Team">Team</div>
+			</a>
+		</li>
+		<li>
+			<a href="contact.html">
+				<div class="icon">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				</div>
+				<div class="name" data-text="Contact_Us">Contact_Us</div>
+			</a>
+		</li>
+	</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="w3-content w3-display-container" align="center">
+  <img class="mySlides" src="https://www.biggerbolderbaking.com/wp-content/uploads/2018/04/Japanese-Cheesecake-Thumnail-final--1024x682.jpg" width="1000" height="40%">
+ <img class="mySlides" src="https://www.ghirardelli.com/wcsstore/GhirardelliCatalogAssetStore//Images/images/recipe-full-size/1046-chocolate-waffles.jpg" width="1000" height="40%">
+
+ 
+  <img class="mySlides" src="http://www.burgerstudy.com/wp-content/themes/BurgerStudy/images/bg-9.jpg" width="1000" height="40%">
+ <img class="mySlides" SRC="http://i.imgur.com/BniqvJt.jpg?1" alt="Night Sky" width="1000" height="40%" >
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

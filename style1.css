@@ -1,0 +1,109 @@
+/*body
+{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	background: #e91e63;
+}
+*/
+ul
+{
+	position: absolute;
+	top: 10%;
+	Left:50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 20px 0;
+	background: #ffff;
+	display:flex;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+ul li
+{
+	list-style:none;
+	text-align:center;
+	display:block;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+ul li:last-child
+{
+	border-right:none;
+}
+ul li a
+{
+	text-decoration: none;
+	padding: 0 50px;
+	display: block;
+	
+}
+ul li a .icon
+{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	overflow: hidden;
+	margin: 0 auto 10px;
+}
+ul li a .icon .fa
+{
+	width:100%;
+	height:100%;
+	line-height:40px;
+	font-size: 34px;
+	transition:0.5s;
+	color: #000;
+}
+ul li a:hover .icon .fa
+{
+	transform: translateY(-100%);
+}
+ul li a .icon .fa:last-child
+{
+	color:#e91e63;
+}
+ul li a .name
+{
+	position: relative;
+	height: 20px;
+	width: 100%;
+	display: block;
+}
+
+
+
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 60%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contain{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
